@@ -10,7 +10,7 @@ body {
     background-color: #1a1a1a;
     color: #fff;
     text-align: center;
-    background-image:url(IMAGE&AUDIO/Destiny.jpg);
+    background-image:url(../IMAGE&AUDIO/Destiny.jpg);
     background-repeat:no-repeat;
     background-size:cover;
 }
