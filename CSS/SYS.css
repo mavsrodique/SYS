@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    background-image:url(../IMAGE&AUDIO/Destiny.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    color: #5168f0;
+}
+
+.playlist h2, .question h2 {
+    color: #5168f0;
+}
+
+.song {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.audio {
+    width: 100%;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.yes-button {
+    background-color: #1DB954;
+    color: white;
+}
+
+.yes-button:hover {
+    transform: scale(1.1);
+    background-color: #1ed760;
+}
+
+.no-button {
+    background-color: #ff4500;
+    color: white;
+}
+
+.no-button:hover {
+    transform: scale(1.1);
+    background-color: #dc3545;
+}
+
+.response {
+    font-size: 1.5em;
+    color: #fffc33;
+    margin-top: 15px;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.response-image {
+    display: none; /* Hide images initially */
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 0.8em;
+    color: #ffffff;
+    text-align: center;
+}

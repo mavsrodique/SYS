@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project SYS</title>
+    <link rel="stylesheet" href="../CSS/SYS.css">
+    <style>
+      
+        .modal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+        .modal-content {
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .modal-content button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #1DB954;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Opening Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome!</h2>
+            <p>Click the button below to start the background music and enjoy the experience.</p>
+            <button id="start-button" onclick="startBackgroundMusic()">ENTER </button>
+        </div>
+    </div>
+
+    <div class="container" style="display: none;">
+        <div class="header">
+            <h1>🌹 Will You Be My Girlfriend? 🌹</h1>
+            <p>No Pressure, take your time</p>
+        </div>
+        
+        <div class="question">
+            <h2>So????</h2>
+            <div class="buttons">
+                <button class="yes-button" onclick="showResponse('yes')">Yes! ❤️</button>
+                <button class="no-button" onclick="showResponse('no')">Not now 😢</button>
+            </div>
+            <p id="response" class="response"></p>
+
+            <img id="yes-image" src="../IMAGE&AUDIO/animated-bear-is-in-love-obdfb0txoitfinz6.gif" alt="Happy Image" class="response-image" style="display:none;">
+            <img id="no-image" src="../IMAGE&AUDIO/sad bear.gif " alt="Sad Image" class="response-image" style="display:none;">
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with 💖 just for you</p>
+    </footer>
+
+    <audio id="background-music" loop>
+        <source src="../IMAGE&AUDIO/Bruno Major - Nothing (Lyric & Chord Video).mp3 " type="audio/mpeg">
+       
+    </audio>
+
+    <audio id="yes-audio">
+        <source src="../IMAGE&AUDIO/easily - bruno major  lyrics.mp3 " type="audio/mpeg">
+        
+    </audio>
+    <audio id="no-audio">
+        <source src="../IMAGE&AUDIO/Sad Violin - Sound Effect (HD).mp3" type="audio/mpeg">
+        
+    </audio>
+
+    <script src="../JS/SYS.js"></script>
+</body>
+</html>
